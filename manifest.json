@@ -1,0 +1,10 @@
+{
+    "manifest_version": 3,
+    "name": "Web Scraper",
+    "version": "1.0",
+    "permissions": ["scripting", "activeTab"],
+    "action": {
+      "default_popup": "popup.html"
+    }
+  }
+  
