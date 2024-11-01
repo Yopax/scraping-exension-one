@@ -18,7 +18,7 @@ document.getElementById('scrapeButton').addEventListener('click', async () => {
         document.getElementById('downloadButton').style.display = "none";
       } else {
         feedback.textContent = "Scraping completado.";
-        output.innerHTML = data.map((product, i) => `<p>Producto ${i + 1}: ${product.name} - ${product.sellerName} - ${product.salePrice}</p>`).join('');
+        output.innerHTML = data.map((product, i) => `<p>Producto ${i + 1}:<br/> Nombre: ${product.name} <br/> Distribuidor: ${product.sellerName} <br/> Precio: ${product.salePrice}</p>`).join('');
         document.getElementById('downloadButton').style.display = "inline";
         document.getElementById('downloadButton').onclick = () => downloadJSON(data);
       }

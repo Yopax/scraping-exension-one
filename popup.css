@@ -1,0 +1,101 @@
+/* popup.css */
+
+/* Estilos generales para el cuerpo */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    width: 250px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilo del contenedor principal */
+div {
+    width: 100%;
+    text-align: center;
+}
+
+/* Estilo del título y descripción */
+h2 {
+    font-size: 18px;
+    color: #333;
+    margin: 0 0 8px;
+    font-weight: bold;
+    padding: 20px 0px ;
+}
+
+p {
+    font-size: 10px;
+    color: #666;
+    margin: 0 0 15px;
+    text-align: justify;
+}
+
+/* Estilo del input */
+input[type="text"] {
+    width: 85%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #ff4d4d;
+    outline: none;
+}
+
+/* Estilo de los botones */
+button {
+    width: 85%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+/* Estilo específico para el botón de iniciar scraping */
+#scrapeButton {
+    background-color: #ff6b6b;
+}
+
+#scrapeButton:hover {
+    background-color: #ff4d4d;
+}
+
+/* Estilo específico para el botón de descarga */
+#downloadButton {
+    background-color: #4caf50;
+    display: none; /* Oculto por defecto */
+}
+
+#downloadButton:hover {
+    background-color: #45a049;
+}
+
+/* Feedback y mensajes de salida */
+#feedback,
+#output {
+    font-size: 13px;
+    color: #333;
+    margin-top: 10px;
+}
+
+/* Estilo para el desarrollador */
+p:last-child {
+    font-size: 12px;
+    color: #aaa;
+    margin-top: 20px;
+}
