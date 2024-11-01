@@ -1,7 +1,7 @@
 document.getElementById('scrapeButton').addEventListener('click', async () => {
     const feedback = document.getElementById('feedback');
     const output = document.getElementById('output');
-  
+    
     feedback.textContent = "Realizando scraping...";
     output.innerHTML = "";
   
@@ -47,13 +47,15 @@ document.getElementById('scrapeButton').addEventListener('click', async () => {
     return products; // Devuelve todos los productos encontrados
   }
   
-  // Función para descargar el JSON
+  // Función para descargar el JSON con el nombre ingresado por el usuario
   function downloadJSON(data) {
+    const filenameInput = document.getElementById('filenameInput');
+    const filename = filenameInput.value.trim() || "products"; // Nombre predeterminado si no se ingresa uno
     const blob = new Blob([JSON.stringify(data, null, 2)], { type: 'application/json' });
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = 'products.json';
+    a.download = `${filename}.json`;
     a.click();
     URL.revokeObjectURL(url);
   }

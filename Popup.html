@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -15,12 +16,16 @@
         }
     </style>
 </head>
+
 <body>
-    <h1>Scraper de Productos</h1>
-    <button id="scrapeButton">Iniciar Scraping</button>
-    <button id="downloadButton" style="display: none;">Descargar JSON</button>
-    <div id="feedback"></div>
-    <div id="output"></div>
+    <div>
+        <input type="text" id="filenameInput" placeholder="Nombre del archivo JSON" />
+        <button id="scrapeButton">Iniciar Scraping</button>
+        <button id="downloadButton" style="display: none;">Descargar JSON</button>
+        <div id="feedback"></div>
+        <div id="output"></div>
+    </div>
     <script src="popup.js"></script>
 </body>
+
 </html>
