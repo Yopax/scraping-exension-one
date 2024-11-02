@@ -18,7 +18,7 @@ body {
 .recordatorio{
     font-family: 'Poppins', sans-serif;
     color: #575F6E;
-    font-size: 12px;
+    font-size: 10px;
 }
 .letrab{
     font-family: 'Roboto', sans-serif;
@@ -26,6 +26,7 @@ body {
     font-size: 16px;
     font-weight: 600;
 }
+
 .letrac{
     font-family: 'Roboto', sans-serif;
     color: white;
@@ -86,4 +87,10 @@ body {
       scrollbar-color: var(--sb-thumb-color)
                        var(--sb-track-color);
     }
+  }
+
+  .dev{
+    font-family: 'Poppins', sans-serif;
+    color: #575F6E;
+    font-size: 10px;
   }

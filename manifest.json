@@ -4,6 +4,7 @@
     "version": "1.0",
     "permissions": ["scripting", "activeTab"],
     "action": {
+      "default_icon": "logo.png",
       "default_popup": "popup.html"
     }
   }

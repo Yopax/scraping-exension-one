@@ -81,7 +81,7 @@ async function scrapeProducts() {
 // Función para descargar el JSON con el nombre ingresado por el usuario
 function downloadJSON(data) {
   const filenameInput = document.getElementById("filenameInput");
-  const filename = filenameInput.value.trim() || "products"; // Nombre predeterminado si no se ingresa uno
+  const filename = filenameInput.value.trim() || "testdarli"; // Nombre predeterminado si no se ingresa uno
   const blob = new Blob([JSON.stringify(data, null, 2)], {
     type: "application/json",
   });
