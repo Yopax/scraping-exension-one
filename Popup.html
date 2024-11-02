@@ -1,22 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web Scraper</title>
+    <!-- Importa Tailwind CSS desde el CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="popup.css">
 </head>
 
-<body>
-    <div class="container">
-        <h2>Scraping Plaza Vea Market</h2>
-        <input type="text" id="filenameInput" placeholder="Nombre del archivo JSON" />
-        <button id="scrapeButton">Iniciar Scraping</button>
-        <button id="downloadButton">Descargar JSON</button>
-        <div id="feedback"></div>
-        <div id="output"></div>
-        <p>Developed by: Barreto Darli</p>
+<body class="flex-col ">
+    <div class="flex mx-6 space-x-3 items-center mt-5 mb-5">
+        <img class="w-6 h-6" src="logo.png" alt="logo">
+        <h2 class="font-bold title text-gray-700">SCRAPER VEA</h2>
     </div>
+    <div class="flex px-6 space-x-3 py-4 px-6 bg-gray-100">
+        <img src="icon1.svg" alt="">
+        <h2 class="des text-3.5 text-gray-600">We take privacy issues seriously. You can be sure that your personal data
+            is securely protected.</h2>
+    </div>
+    <div class="flex flex-col mx-6 mt-4">
+        <p class="des text-3.5 mb-3">Confirmation code</p>
+        <input id="filenameInput" placeholder="sdad"
+            class="border-b border-blue-500 pb-2 w-full placeholder:text-xs placeholder:font-light focus:outline-none"
+            type="text">
+        <p class="recordatorio mt-3 ">Confirm phone number with code from sms message</p>
+    </div>
+    <div class="flex flex-col mx-6 mt-6">
+        <button id="scrapeButton" class=" w-full letrab bg-white rounded-md mb-2 py-3 px-6 border">
+            Iniciar Scraping
+        </button>
+        <button id="downloadButton" class="w-full letrac rounded-md py-3 mb-4 px-6 border">
+            Descargar JSON
+        </button>
+    </div>
+    <div id="feedback" class="text-center text-gray-600 mb-4"></div>
+    <div id="output" class="text-left text-gray-800"></div>
     <script src="popup.js"></script>
 </body>
 </html>
